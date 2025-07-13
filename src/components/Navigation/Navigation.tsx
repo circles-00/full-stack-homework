@@ -1,14 +1,8 @@
 'use client';
 
-import {
-  AppBar,
-  Toolbar,
-  Typography,
-  Button,
-  Box,
-  Container,
-} from '@mui/material';
+import { AppBar, Typography, Button, Container } from '@mui/material';
 import { useRouter, usePathname } from 'next/navigation';
+import { StyledBox, StyledLink, StyledToolbar } from './Navigation.styled';
 
 const navigationItems = [
   { name: 'Numbers', path: '/numbers' },
@@ -22,11 +16,13 @@ export const Navigation = () => {
   return (
     <AppBar position="static">
       <Container>
-        <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            AlisonAI
-          </Typography>
-          <Box sx={{ display: 'flex', gap: 1 }}>
+        <StyledToolbar>
+          <StyledLink href="/">
+            <Typography variant="h6" component="div">
+              AlisonAI
+            </Typography>
+          </StyledLink>
+          <StyledBox>
             {navigationItems.map((item) => (
               <Button
                 key={item.name}
@@ -37,8 +33,8 @@ export const Navigation = () => {
                 {item.name}
               </Button>
             ))}
-          </Box>
-        </Toolbar>
+          </StyledBox>
+        </StyledToolbar>
       </Container>
     </AppBar>
   );

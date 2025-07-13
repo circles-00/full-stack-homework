@@ -68,7 +68,7 @@ export const NumbersPage: FC = () => {
           isError ? getAxiosErrorMessage(error) : insertResponse?.message
         }
       />
-      <StyledContainer sx={{ mt: 4 }}>
+      <StyledContainer>
         <StyledFormContainer onSubmit={methods.handleSubmit(onSubmit)}>
           <FormInput<TNumbersValidationSchema>
             name="number"
