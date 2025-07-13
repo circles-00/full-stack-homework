@@ -1,1 +1,1 @@
-export * from "./GradesPage"
+export * from './GradesPage';

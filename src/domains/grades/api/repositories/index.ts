@@ -1,2 +1,2 @@
-export * from "./GradesRepository"
-export * from "./types"
+export * from './GradesRepository';
+export * from './types';

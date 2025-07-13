@@ -18,7 +18,6 @@ import { Toast } from '@/components';
 import { getAxiosErrorMessage } from '@/services/DataService';
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import { IFetchGradesResponse } from '@/services/DataService/grades/types';
-import { random } from 'lodash';
 
 export const GradesPage: FC = () => {
   const methods = useForm<TGradesValidationSchema>({

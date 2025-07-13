@@ -1,3 +1,3 @@
-export * from "./grades"
-export * from "./numbers"
-export * from "./utils"
+export * from './grades';
+export * from './numbers';
+export * from './utils';

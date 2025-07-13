@@ -1,3 +1,3 @@
-export * from "./GradesController"
-export * from "./types"
-export * from "./utils"
+export * from './GradesController';
+export * from './types';
+export * from './utils';

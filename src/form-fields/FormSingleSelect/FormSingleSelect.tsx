@@ -42,4 +42,3 @@ export const FormSingleSelect = <T extends FieldValues>({
     </FormControl>
   );
 };
-

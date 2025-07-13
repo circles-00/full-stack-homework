@@ -6,6 +6,7 @@ export interface IInsertGradePayload {
 }
 
 export interface IFetchGradesResponse {
+  id: number;
   grade: number;
   class: TClass;
 }

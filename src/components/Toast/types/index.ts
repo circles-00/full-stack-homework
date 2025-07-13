@@ -1,4 +1,4 @@
-import { SnackbarProps, Theme } from '@mui/material';
+import { SnackbarProps } from '@mui/material';
 
 export type TToastVariant = 'success' | 'error';
 

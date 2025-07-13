@@ -1,2 +1,2 @@
-export * from "./GradesService"
-export * from "./types"
+export * from './GradesService';
+export * from './types';

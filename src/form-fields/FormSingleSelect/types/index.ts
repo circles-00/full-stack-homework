@@ -11,4 +11,3 @@ export interface IFormSingleSelect<T extends FieldValues>
   name: Path<T>;
   options: ISelectItem[];
 }
-
