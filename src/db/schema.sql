@@ -1,0 +1,15 @@
+CREATE TABLE IF NOT EXISTS numbers (
+    id SERIAL PRIMARY KEY,
+    value INTEGER UNIQUE NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE INDEX idx_value ON numbers (value);
+
+CREATE TABLE IF NOT EXISTS grades (
+    id SERIAL PRIMARY KEY,
+    class VARCHAR(50) NOT NULL CHECK (class IN ('Math', 'Science', 'History')),
+    grade INTEGER NOT NULL CHECK (grade >= 0 AND grade <= 100),
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
